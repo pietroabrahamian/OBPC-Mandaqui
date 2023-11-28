@@ -11,6 +11,10 @@
     --color-titulo: #ffe08e;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -157,42 +161,93 @@ main {
 .agenda {
     width: 100vw;
     height: 50vh;
+    padding: 3rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .agenda h2 {
     text-transform: uppercase;
     font-size: 2rem;
 }
 
+.agenda-apascentai {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .agenda-apascentai-adulto {
     display: inline-block;
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     background-image: url(img/Apascentai-2024-adulto.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 5px;
     box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.321);
+    position: relative;
 }
 
 .agenda-apascentai-adulto p {
-    /* background-color: white;
-    color: black;
-    text-align: center;
     position: absolute;
     bottom: 0;
-    display: block; */
-    position: absolute;
-    bottom: 1;
     display: block;
     width: 100%;
     padding: 10px 5px;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.575);
     color: #131b22;
     text-transform: capitalize;
     font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.agenda-apascentai-kids {
+    width: 500px;
+    height: 300px;
+    background-image: url(img/Apascentai-2024-kids.jpeg);
+    display: block;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.321);
+    text-align: center;
+    position: relative;
+}
+
+.agenda-apascentai-kids>p {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.575);
+    color: #131b22;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+/* --------------------------MINISTRAÇÕES-------------------------- */
+.ministracoes {
+    width: 100vw;
+    height: 50vh;
+}
+.ministracoes h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.ministracoes-links {
+    width: 100vw;
+    display: flex;
 }
