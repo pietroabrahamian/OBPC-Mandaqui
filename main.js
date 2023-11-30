@@ -13,7 +13,7 @@ function onScroll() {
 function showNavOnScroll() {
   const navigation = document.querySelector("#navigation");
   const imagemLogo = document.querySelector("#imglogo");
-  if (scrollY > 10) {
+  if (scrollY > 750) {
     navigation.classList.add("scroll");
   } else {
     navigation.classList.remove("scroll");

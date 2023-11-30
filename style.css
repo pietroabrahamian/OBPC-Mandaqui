@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+.scroll{
+    background-color: #2488ff;
+}
+
 :root {
     --color-titulo: #ffe08e;
 }
@@ -29,14 +33,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    z-index: 100;
 }
 
 header>nav {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
+    padding: 0 10%;
     justify-content: space-between;
 }
 
@@ -161,7 +166,7 @@ main {
 /* --------------------------AGENDA-------------------------- */
 .second-page {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 }
 
 .agenda {
@@ -190,7 +195,7 @@ main {
 
 .agenda-apascentai-adulto {
     display: inline-block;
-    width: 25vw;
+    width: 30vw;
     height: 100%;
     background-image: url(img/Apascentai-2024-adulto.jpeg);
     background-position: center;
@@ -202,7 +207,7 @@ main {
 }
 
 .agenda-apascentai-adulto:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -222,9 +227,7 @@ main {
 }
 
 .agenda-apascentai-kids {
-    /* width: 36%;
-    height: 45%; */
-    width: 25vw;
+    width: 30vw;
     height: 100%;
     background-image: url(img/Apascentai-2024-kids.jpeg);
     display: block;
@@ -239,7 +242,7 @@ main {
 }
 
 .agenda-apascentai-kids:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -287,27 +290,60 @@ main {
 }
 
 .santa-ceia {
-    width: 20vw;
+    width: 25vw;
     height: 90%;
-    background-image: url(img/santa-ceia.jpg);
+    /* background-image: url(img/santa-ceia.jpg); */
     background-position: center;
     background-size: cover;
     border-radius: 5px;
+    transition: 0.3s;
+}
+.santa-ceia > img {
+    width: 100%;
+    height: 100%;
+}
+
+.santa-ceia:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .culto-domingo {
-    width: 20vw;
+    width: 25vw;
     height: 90%;
     background-image: url(img/culto-domingo.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5px;
+    transition: 0.3s;
 }
+
+.culto-domingo > img {
+    width: 100%;
+    height: 100%;
+}
+
+.culto-domingo:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 .devocional {
-    width: 20vw;
+    width: 25vw;
     height: 90%;
     background-image: url(img/devocional.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.devocional > img {
+    width: 100%;
+    height: 100%;
+}
+
+.devocional:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
