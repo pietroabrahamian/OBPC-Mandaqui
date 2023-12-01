@@ -347,3 +347,62 @@ main {
     transform: scale(1.1);
     transition: 0.3s;
 }
+
+
+/* --------------------------PALAVRA-PR-------------------------- */
+.palavra-pr {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem
+}
+.palavra-pr img {
+    /* width: 60%; */
+    border-radius: 2px;
+}
+.palavra-pr  a > button {
+    width: 10vw;
+    margin: 1rem 0px;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.688);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.palavra-pr  a > button:hover {
+    background-color: #2488ff;
+    color: white;
+    transition: 0.5s;
+}
+.mensagem-p {
+    width: 40%;
+}
+.mensagem-p > h2{
+    font-size: 1.5rem;
+}
+.barra-separacao {
+    margin: 0.8rem 0px;
+    width: 9.5vw;
+    height: 1vh;
+    background-color: #131b22;
+    border-radius: 5px;
+}
+.barra-separacao-2 {
+    margin: 0.8rem 0px;
+    width: 29.4vw;
+    height: 1vh;
+    background-color: #131b22;
+    border-radius: 5px;
+}
+
+
+
+/* --------------------------FOOTER-------------------------- */
+footer {
+    padding: 5rem;
+}
+footer a {
+    color: black;
+}
