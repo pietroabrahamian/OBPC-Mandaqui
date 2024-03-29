@@ -85,11 +85,11 @@ header>nav>ul>li {
 .botao:after {
     content: "";
     pointer-events: none;
-    bottom: -2px;
+    bottom: -0.01rem;
     left: 50%;
     position: absolute;
     width: 0%;
-    height: 2px;
+    height: 0.13rem;
     background-color: #fff;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
@@ -276,7 +276,7 @@ main {
     bottom: 0;
     display: block;
     width: 100%;
-    padding: 10px 5px;
+    padding: 0.7rem 0.35rem;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.575);
     color: #131b22;
@@ -311,7 +311,7 @@ main {
     bottom: 0;
     display: block;
     width: 100%;
-    padding: 10px 5px;
+    padding: 0.7rem 0.35rem;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.575);
     color: #131b22;
@@ -330,7 +330,7 @@ main {
     gap: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid black;
     background-color: #131b22;
@@ -344,24 +344,25 @@ main {
 
 .ministracoes-links {
     width: 100vw;
-    height: 90vh;
+    height: 25vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
-.santa-ceia {
+.ministracoes-links a {
     width: 25vw;
-    height: 60%;
-    /* background-image: url(img/santa-ceia.jpg); */
+    height: 25vh;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.santa-ceia {
+    width: 100%;
+    height: 100%;
+    background: url(../img/santa-ceia.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5px;
     transition: 0.3s;
-}
-.santa-ceia > img {
-    width: 100%;
-    height: 100%;
 }
 
 .santa-ceia:hover {
@@ -370,8 +371,8 @@ main {
 }
 
 .culto-domingo {
-    width: 25vw;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     background-image: url(../img/culto-domingo.jpg);
     background-position: center;
     background-size: cover;
@@ -379,10 +380,6 @@ main {
     transition: 0.3s;
 }
 
-.culto-domingo > img {
-    width: 100%;
-    height: 100%;
-}
 
 .culto-domingo:hover {
     transform: scale(1.1);
@@ -390,18 +387,13 @@ main {
 }
 
 .devocional {
-    width: 25vw;
-    height: 60%;
-    background-image: url(img/devocional.jpg);
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/devocional.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5px;
     transition: 0.3s;
-}
-
-.devocional > img {
-    width: 100%;
-    height: 100%;
 }
 
 .devocional:hover {
@@ -414,13 +406,14 @@ main {
 .terceira-page{
     width: 100vw;
     height: 90vh;
+    margin-bottom: 3rem;
 }
 .palavra-pr {
     display: flex;
     width: 100vw;
     height: 90vh;
     gap: 1rem;
-    padding: 1rem
+    padding: 1rem;
 }
 .palavra-pr img {
     width: 40%;
@@ -490,6 +483,7 @@ main {
     border: 1px solid black;
     cursor: pointer;
     background-color: white;
+
     transition: 0.5s;
 }
 .noticias a>button:hover {
@@ -544,5 +538,92 @@ footer a:hover {
 
 
 @media (max-width: 600px) {
-    
+    header nav ul{
+        display: none;
+    }
+    html {
+        font-size: 10px;
+    }
+    .menuButton {
+        font-size: 16px;
+    }
+    .inicial-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    /*--------APASCENTAI--------*/
+    .titulo {
+        font-size: 2.5rem;
+    }
+    .agenda-apascentai, .apascentai{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .agenda-apascentai-adulto, .agenda-apascentai-kids {
+        width: 60vw;
+        height: 30vh;
+    }
+
+
+    /*--------MINISTRACOES--------*/
+
+
+    .ministracoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ministracoes h2 {
+        font-size: 2.5rem;
+    }
+    .ministracoes-links {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        height: 90%;
+    }
+    .ministracoes-links a {
+        width: 30vw;
+        height: 70vh;
+    }
+
+    /*--------PALAVRA-PR--------*/
+    .terceira-page {
+        height: 112vh;
+    }
+    .palavra-pr {
+        display: flex;
+        flex-direction: column;
+    }
+    .palavra-pr img {
+        width: 40%;
+        height: 40%;
+    }
+    .mensagem-pr {
+        width: 100vw;
+        height: 100%;
+    }
+    .mensagem-pr a button {
+        width: 30vw;
+    }
+
+    /*---------NOTICIA--------*/
+    .noticias a button {
+        width: 60vw;
+        height: 15vh;
+    }
+
+    footer {
+        font-size: 14px;
+        gap: 1.5rem;
+    }
+    .insta {
+        width: 6vw;
+    }
 }
