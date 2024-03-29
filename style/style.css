@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
 
 * {
     padding: 0;
@@ -52,6 +52,7 @@ header>nav>ul {
 
 header>nav>ul>li {
     font-weight: 600;
+
 }
 
 
@@ -99,65 +100,57 @@ header>nav>ul>li {
     cursor: pointer;
 }
 
-.burger {
-    position: relative;
-    width: 3%;
-    height: 20%;
-    background: transparent;
+
+.menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13%;
+    color: #090909;
+    width: 2em;
+    height: 2em;
+    border-radius: 0.5em;
+    transition: all .3s;
     cursor: pointer;
-    display: block;
   }
   
-  .burger input {
+  
+  .menuButton:active {
+    color: #666;
+  }
+  
+  input[type = "checkbox"] {
+    /* -webkit-appearance: none; */
     display: none;
+    visibility: hidden;
   }
   
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #e1e1e1;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+  .menuButton span {
+    width: 80%;
+    height: 10%;
+    background: #fff;
+    border-radius: 100px;
+    transition: 0.3s ease;
   }
   
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
+  input[type]:checked ~ span.top {
+    transform: translateY(290%)rotate(45deg);
+    width: 80%;
   }
   
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
+  input[type]:checked ~ span.bot {
+    transform: translateY(-160%) rotate(-45deg);
+    width: 80%;
+    /* box-shadow: 0 0 10px #495057; */
   }
   
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(60deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
+  input[type]:checked ~ span.mid {
     opacity: 0;
   }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-60deg);
-    top: 28px;
-    left: 5px;
-  }
+
+
+
 
 /* --------------------------INICIO-------------------------- */
 main {
@@ -172,7 +165,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(img/igreja-obpc.jpg);
+    background-image: url(../img/igreja-obpc.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -263,7 +256,7 @@ main {
     display: inline-block;
     width: 30vw;
     height: 40vh;
-    background-image: url(img/Apascentai-2024-adulto.jpeg);
+    background-image: url(../img/Apascentai-2024-adulto.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 5px;
@@ -295,7 +288,7 @@ main {
 .agenda-apascentai-kids {
     width: 30vw;
     height: 40vh;
-    background-image: url(img/Apascentai-2024-kids.jpeg);
+    background-image: url(../img/Apascentai-2024-kids.jpeg);
     display: block;
     background-color: red;
     background-position: center;
@@ -378,7 +371,7 @@ main {
 .culto-domingo {
     width: 25vw;
     height: 60%;
-    background-image: url(img/culto-domingo.jpg);
+    background-image: url(../img/culto-domingo.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5px;
@@ -419,7 +412,7 @@ main {
 /* --------------------------PALAVRA-PR-------------------------- */
 .terceira-page{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 }
 .palavra-pr {
     display: flex;
@@ -471,6 +464,37 @@ main {
     height: 1vh;
     background-color: #131b22;
     border-radius: 5px;
+}
+
+
+/* --------------------------NOTÍCIAS-------------------------- */
+.noticias {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background: url(../img/fundo-igreja.jpg) center center no-repeat;
+    background-size: cover;
+}
+.noticias a>button {
+    font-size: 2rem;
+    font-weight: 200;
+    /* font-style: italic; */
+    width: 40vw;
+    height: 25vh;
+    color: #090909;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
+}
+.noticias a>button:hover {
+    color: #e1e1e1;
+    background-color: #2488ff;
+    transition: 0.5s;
 }
 
 

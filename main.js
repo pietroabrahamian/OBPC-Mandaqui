@@ -19,3 +19,12 @@ function showNavOnScroll() {
     navigation.classList.remove("scroll");
   }
 }
+
+// Menu responsivel para telas menores
+// function abrirMenu() {
+//   document.body.classList.add("menu-expanded");
+// }
+
+// function fecharMenu() {
+//   document.body.classList.remove("menu-expanded");
+// }

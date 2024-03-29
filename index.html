@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="img/favicon-obpc.png" type="image/x-icon">
     <title>Igreja O Brasil Para Cristo Mandaqui</title>
 </head>
@@ -18,15 +18,15 @@
                 <ul type="none">
                     <li class="botao" onclick="fecharMenu()"><a href="#Apascentai">Apascentai</a></li>
                     <li class="botao" onclick="fecharMenu()"><a href="#Ministracoes">Ministrações</a></li>
-                    <!-- <li class="botao" onclick="fecharMenu()"><a href="#">Testemunhos</a></li> -->
+                    <li class="botao" onclick="fecharMenu()"><a href="#noticias">Notícias</a></li>
                     <li class="botao" onclick="fecharMenu()"><a href="#saiba-mais">Saiba Mais</a></li>
                 </ul>
-                    <label class="burger" for="burger">
-                        <input type="checkbox" id="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </label>
+                    <label for="check" class="menuButton">
+                    <input id="check" type="checkbox">
+                    <span class="top"></span>
+                    <span class="mid"></span>
+                    <span class="bot"></span>
+                </label>
 
             </nav>
         </header>
@@ -42,7 +42,8 @@
                 <section class="inicial-footer">
                     <div class="inicial-footer-esquerda">
                         <ul type="none">
-                            <li id="Apascentai"><Span class="bold">Cultos:</Span> 4ᵃˢ feiras • 15h | 5ᵃˢ feiras • 20h | Domingos • 10h e
+                            <li id="Apascentai"><Span class="bold">Cultos:</Span> 4ᵃˢ feiras • 15h | 5ᵃˢ feiras • 20h |
+                                Domingos • 10h e
                                 às
                                 19h</li>
                             <li><span class="bold">Devocionais:</span> De Segunda a Sexta-feira das 08h às 08h30</li>
@@ -57,15 +58,15 @@
                 </section>
             </section>
             <section class="second-page">
-                <section class="apascentai" >
-                    <h2 class="titulo" >Apascentais</h2>
+                <section class="apascentai">
+                    <h2 class="titulo">Apascentais</h2>
                     <div class="agenda-apascentai">
                         <a href="https://www.obpcmandaqui.com.br/apascentai2024/">
                             <div class="agenda-apascentai-adulto">
                                 <p>Apascentai O Pequeno Rebanho 2024(E-book)</p>
                             </div>
                         </a>
-                        <a href="https://www.obpcmandaqui.com.br/apascentaikids2024/" >
+                        <a href="https://www.obpcmandaqui.com.br/apascentaikids2024/">
                             <div class="agenda-apascentai-kids">
                                 <p id="Ministracoes">Apascentai Kids2024 </p>
                             </div>
@@ -97,26 +98,52 @@
             </section>
 
             <div class="terceira-page">
-            <section class="palavra-pr">
-                <img src="img/Pr-Joel.jpg" alt="Pastor Joel">
-                <div class="mensagem-pr">
-                    <h2>Palavra Pastoral</h2>
-                    <h3>Pr. Joel Stevanatto</h3>
-                    <div class="barra-separacao"></div>
-                    <ul type="none">
-                        <li>Semana 48 – Aprendendo a tomar posse da bênção!</li>
-                        <li>26 de Novembro de 2023</li>
-                        <li>Texto base Gênesis 12.1 1.2</li>
-                    </ul>
-                    <p class="bold">Nesta semana, vamos pensar sobre o valor das conquistas. Como é boa a sensação de conquistar alguma coisa, seja a compra daquela blusinha ou um par de sapatos ou, para aqueles que são mais competitivos, ganhar o campeonato de futebol (existem alguns que se sentem bem até quando ganham no par ou ímpar). Conquistar gera bem-estar porque está associado com autoridade e soberania; ou seja, quando conquistamos, tomamos posse e colocamos debaixo do nosso domínio. Você já teve ou tem um cachorro teimoso que não obedece as suas ordens? Você manda ele sentar e ele deita e quando você manda ele deitar, ele corre? Por outro lado, como é agradável quando você dá uma ordem ao seu pet e imediatamente ele se posiciona mediante suas palavras, afi nal você o conquistou! Como é bom dominar, ter sob controle… conquistar! Mas, quando encaramos a conquista pelo prisma da Palavra de Deus e de um Deus único e Soberano, o qual detém o poder sobre as obras das suas mãos, o nosso poder de conquista é estabelecido pela postura nada agradável de obedecer e se submeter. Veja o caso de Abraão: Deus lhe fez promessas, deu-lhe ordens, e mediante a fé e a obediência, haveria a conquista. Fé é acreditar com certeza, mesmo sem ter domínio de fatos; e obediência é deixar-se conquistar por aquele que ordena. Você já ouviu dizer que é perdendo que se ganha? Para os fi lhos de Deus, é na medida em que eles se deixam conquistar pelo seu Senhor que aprendem a tomar posse e conquistar aquilo que lhes foi prometido. Portanto, deixe-se conquistar para ser um conquistador!
-                    </p>
-                    <div class="barra-separacao-2"></div>
-                    <ul type="none"><li><span class="bold">Texto:</span> Apascentai O Pequeno Rebanho 2023 – Igreja OBPC Mandaqui – “Amando Deus, Pessoas e Servindo”.</li></ul>
-                    <a href="https://www.obpcmandaqui.com.br/ministracoes/"><button>Ver mais</button></a>
-                </div>
-            </section>
-        </div>
+                <section class="palavra-pr">
+                    <img src="img/Pr-Joel.jpg" alt="Pastor Joel">
+                    <div class="mensagem-pr">
+                        <h2>Palavra Pastoral</h2>
+                        <h3>Pr. Joel Stevanatto</h3>
+                        <div class="barra-separacao"></div>
+                        <ul type="none">
+                            <li>Semana 48 – Aprendendo a tomar posse da bênção!</li>
+                            <li>26 de Novembro de 2023</li>
+                            <li>Texto base Gênesis 12.1 1.2</li>
+                        </ul>
+                        <p class="bold">Nesta semana, vamos pensar sobre o valor das conquistas. Como é boa a sensação
+                            de conquistar alguma coisa, seja a compra daquela blusinha ou um par de sapatos ou, para
+                            aqueles que são mais competitivos, ganhar o campeonato de futebol (existem alguns que se
+                            sentem bem até quando ganham no par ou ímpar). Conquistar gera bem-estar porque está
+                            associado com autoridade e soberania; ou seja, quando conquistamos, tomamos posse e
+                            colocamos debaixo do nosso domínio. Você já teve ou tem um cachorro teimoso que não obedece
+                            as suas ordens? Você manda ele sentar e ele deita e quando você manda ele deitar, ele corre?
+                            Por outro lado, como é agradável quando você dá uma ordem ao seu pet e imediatamente ele se
+                            posiciona mediante suas palavras, afi nal você o conquistou! Como é bom dominar, ter sob
+                            controle… conquistar! Mas, quando encaramos a conquista pelo prisma da Palavra de Deus e de
+                            um Deus único e Soberano, o qual detém o poder sobre as obras das suas mãos, o nosso poder
+                            de conquista é estabelecido pela postura nada agradável de obedecer e se submeter. Veja o
+                            caso de Abraão: Deus lhe fez promessas, deu-lhe ordens, e mediante a fé e a obediência,
+                            haveria a conquista. Fé é acreditar com certeza, mesmo sem ter domínio de fatos; e
+                            obediência é deixar-se conquistar por aquele que ordena. Você já ouviu dizer que é perdendo
+                            que se ganha? Para os fi lhos de Deus, é na medida em que eles se deixam conquistar pelo seu
+                            Senhor que aprendem a tomar posse e conquistar aquilo que lhes foi prometido. Portanto,
+                            deixe-se conquistar para ser um conquistador!
+                        </p>
+                        <div class="barra-separacao-2"></div>
+                        <ul type="none" id="noticias">
+                            <li><span class="bold">Texto:</span> Apascentai O Pequeno Rebanho 2023 – Igreja OBPC
+                                Mandaqui – “Amando Deus, Pessoas e Servindo”.</li>
+                        </ul>
+                        <a href="https://www.obpcmandaqui.com.br/ministracoes/"><button>Ver mais</button></a>
+                    </div>
+                </section>
+            </div>
+            <div class="noticias">
+                <a href="noticias.html"><button><img src="img/favicon-obpc.png" alt=""> Notícias / Eventos</button></a>
+            </div>
+
         </main>
+
+
         <footer id="saiba-mais">
             <ul type="none">
                 <h4>INSTITUCIONAL</h4>
@@ -127,10 +154,11 @@
             <ul type="none">
                 <h4>A IGREJA</h4>
                 <div class="barra-separacao-3"></div>
+                <li><a href="agenda.html">• Agenda</a></li>
                 <li><a href="https://www.obpcmandaqui.com.br/servirmaos/">• Servimãos</a></li>
                 <li><a href="https://www.obpcmandaqui.com.br/igreja/?active=membros">• Membros</a></li>
                 <li><a href="https://livrariaobpc.com.br/">• Livraria OBPC</a></li>
-                <li><a href="#">• GEMES</a></li>
+                <li><a href="https://www.obpcmandaqui.com.br/GEMESPV.pdf" target="_blank">• GEMES</a></li>
                 <li><a href="#">• A Regional</a></li>
             </ul>
             <ul type="none">
@@ -149,11 +177,14 @@
             <ul type="none">
                 <h4>SIGA-NOS NAS REDES</h4>
                 <div class="barra-separacao-3"></div>
-                <li class="rd-social"><a href="https://www.facebook.com/obpc.mandaqui" target="_blank"><img class="icon-rs" src="img/facebook.png" alt=""></a>
+                <li class="rd-social"><a href="https://www.facebook.com/obpc.mandaqui" target="_blank"><img
+                            class="icon-rs" src="img/facebook.png" alt=""></a>
 
-                <a href="https://www.instagram.com/obpcmandaqui/" target="_blank"><img class="insta icon-rs" src="img/instagram.png" alt=""></a>
+                    <a href="https://www.instagram.com/obpcmandaqui/" target="_blank"><img class="insta icon-rs"
+                            src="img/instagram.png" alt=""></a>
 
-                <a href="https://www.youtube.com/obpcmandaqui" target="_blank"><img class="icon-rs" src="img/youtube.png" alt=""></a>
+                    <a href="https://www.youtube.com/obpcmandaqui" target="_blank"><img class="icon-rs"
+                            src="img/youtube.png" alt=""></a>
                 </li>
             </ul>
         </footer>
