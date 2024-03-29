@@ -22,10 +22,6 @@ body {
     overflow-x: hidden;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
 
 /* --------------------------HEADER-------------------------- */
 header {
@@ -43,19 +39,13 @@ header>nav {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 8%;
     justify-content: space-between;
 }
-
-header>nav>ul {
-    display: flex;
-    gap: 4rem;
+header nav>a{
+    text-decoration: none;
+    letter-spacing: 0.1rem;
 }
-
-header>nav>ul>li {
-    font-weight: 600;
-}
-
 
 .botao {
     color: #e1e1e1;
@@ -105,64 +95,52 @@ header>nav>ul>li {
     cursor: pointer;
 }
 
-.burger {
-    position: relative;
-    width: 3%;
-    height: 20%;
-    background: transparent;
+.menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 13%;
+    color: #090909;
+    width: 2em;
+    height: 2em;
+    border-radius: 0.5em;
+    transition: all .3s;
     cursor: pointer;
-    display: block;
   }
   
-  .burger input {
+  
+  .menuButton:active {
+    color: #666;
+  }
+  
+  input[type = "checkbox"] {
+    /* -webkit-appearance: none; */
     display: none;
+    visibility: hidden;
   }
   
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #e1e1e1;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+  .menuButton span {
+    width: 80%;
+    height: 10%;
+    background: #fff;
+    border-radius: 100px;
+    transition: 0.3s ease;
   }
   
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
+  input[type]:checked ~ span.top {
+    transform: translateY(290%)rotate(45deg);
+    width: 80%;
   }
   
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
+  input[type]:checked ~ span.bot {
+    transform: translateY(-160%) rotate(-45deg);
+    width: 80%;
+    /* box-shadow: 0 0 10px #495057; */
   }
   
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(60deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
+  input[type]:checked ~ span.mid {
     opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-60deg);
-    top: 28px;
-    left: 5px;
   }
 
 
