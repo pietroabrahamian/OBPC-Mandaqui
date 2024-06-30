@@ -570,7 +570,33 @@ footer a:hover {
     }
 }
 
-
+@media (max-width: 1366px) {
+    .botao{
+        font-size: 1.1rem;
+    }
+    .agenda-apascentai-adulto, .agenda-apascentai-kids{
+        width: 30vw;
+        height: 30vh;
+    }
+    .ministracoes-links a {
+        width: 25vw;
+        height: 21vh;
+    }
+    .palavra-pr img {
+        width: 20%; /* Ajuste conforme necessário */
+        height: 40%;
+    }
+    
+     .mensagem-pr {
+        width: 80%;
+        font-size: 90%;
+    } 
+    .palavra-pr  a > button{
+        width: 15%;
+        height: 10%;
+        font-size: 100%;
+    }
+}
 
 
 
