@@ -545,9 +545,6 @@ footer a:hover {
     .agenda-apascentai-adulto, .agenda-apascentai-kids{
         height: 50vh;
     }
-     .ministracoes {
-        /* height: 70vh; */
-    } 
     .ministracoes-links a {
         height: 40vh;
     }
@@ -572,15 +569,15 @@ footer a:hover {
 
 @media (max-width: 1366px) {
     .botao{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
-    .agenda-apascentai-adulto, .agenda-apascentai-kids{
-        width: 30vw;
-        height: 30vh;
+    .agenda-apascentai-adulto, .agenda-apascentai-kids {
+        width: 40vw;
+        height: 50vh;
     }
     .ministracoes-links a {
         width: 25vw;
-        height: 21vh;
+        height: 25vh;
     }
     .palavra-pr img {
         width: 20%; /* Ajuste conforme necessário */
@@ -589,12 +586,15 @@ footer a:hover {
     
      .mensagem-pr {
         width: 80%;
-        font-size: 90%;
+        font-size: 80%;
     } 
     .palavra-pr  a > button{
         width: 15%;
         height: 10%;
         font-size: 100%;
+    }
+    footer{
+        height: 50vh;
     }
 }
 
