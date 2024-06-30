@@ -421,8 +421,6 @@ main {
 }
 .palavra-pr  a > button {
     width: 15%;
-
-
     margin: 1% 0px;
     padding: 0.8rem;
     background-color: white;
@@ -538,6 +536,43 @@ footer a:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
+
+
+@media (max-width:2560px) {
+    .inicial-footer {
+        justify-content: space-around;
+    }
+    .agenda-apascentai-adulto, .agenda-apascentai-kids{
+        height: 50vh;
+    }
+     .ministracoes {
+        /* height: 70vh; */
+    } 
+    .ministracoes-links a {
+        height: 40vh;
+    }
+    .terceira-page{
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .noticias{
+        height: 60vh;
+    }
+    .mensagem-pr {
+        width: 70%;
+    }
+    .palavra-pr  a > button {
+        width: 25%;
+        height: 12%;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
 
 
 @media (max-width: 600px) {
