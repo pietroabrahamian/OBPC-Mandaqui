@@ -717,10 +717,28 @@ footer a:hover {
     }
 
     footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 40vh;
         font-size: 1rem;
         gap: 1.5rem;
     }
     .insta {
-        width: 6vw;
+        width: 13vw;
+    }
+    footer > ul{
+        display: none;
+    }
+    .redes-sociais{
+        display: block;
+        font-size: 2rem;
+    }
+    .redes-sociais > .barra-separacao-3 {
+        width: 100%;
+    }
+    .redes-sociais > li{
+        gap: 4rem;
     }
 }
