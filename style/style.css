@@ -19,6 +19,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 a {
@@ -538,7 +539,7 @@ footer a:hover {
 }
 
 
-@media (max-width:2560px) {
+@media (max-width:2550px) {
     .inicial-footer {
         justify-content: space-around;
     }
@@ -579,6 +580,9 @@ footer a:hover {
         width: 25vw;
         height: 25vh;
     }
+    .terceira-page{
+        height: 90vh;
+    }
     .palavra-pr img {
         width: 20%; /* Ajuste conforme necessário */
         height: 40%;
@@ -611,13 +615,23 @@ footer a:hover {
     .menuButton {
         font-size: 16px;
     }
+    h1{
+        font-size: 1.3rem;
+    }
+    .nomeMandaqui{
+        font-size: 4.5rem;
+    }
     .inicial-footer {
         display: flex;
         flex-direction: column;
         gap: 0px;
+        padding: 1rem;
     }
 
     /*--------APASCENTAI--------*/
+    .apascentai{
+        
+    }
     .titulo {
         font-size: 2.5rem;
     }
@@ -629,8 +643,8 @@ footer a:hover {
         align-items: center;
     }
     .agenda-apascentai-adulto, .agenda-apascentai-kids {
-        width: 60vw;
-        height: 30vh;
+        width: 80vw;
+        height: 25vh;
     }
 
 
@@ -642,9 +656,10 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 0.5rem;
     }
     .ministracoes h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .ministracoes-links {
         flex-direction: column;
@@ -653,16 +668,22 @@ footer a:hover {
         height: 100%;
     }
     .ministracoes-links a {
-        width: 30vw;
-        height: 70vh;
+        width: 80vw;
+        height: 20vh;
     }
 
 
     /*--------PALAVRA-PR--------*/
     .terceira-page {
-        height: 112vh;
+        background-color: #fff;
+        width: 100vw;
+        height: 80vh;
+        padding-left: 1rem;
     }
     .palavra-pr {
+        width: 100%;
+        height: 100%;
+        margin: 0;
         display: flex;
         flex-direction: column;
     }
@@ -671,7 +692,7 @@ footer a:hover {
         height: 40%;
     }
     .mensagem-pr {
-        width: 100vw;
+        width: 100%;
         height: 100%;
     }
     .mensagem-pr a button {
@@ -679,13 +700,24 @@ footer a:hover {
     }
 
     /*---------NOTICIA--------*/
+    .noticias{
+        margin-top: 11rem;
+    }
     .noticias a button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
         width: 60vw;
-        height: 15vh;
+        height: 8vh;
+        border-radius: 5px;
+    }
+    .noticias a button img{
+        width: 1.5rem;
     }
 
     footer {
-        font-size: 14px;
+        font-size: 1rem;
         gap: 1.5rem;
     }
     .insta {
