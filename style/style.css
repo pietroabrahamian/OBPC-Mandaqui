@@ -656,7 +656,7 @@ footer a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0.5rem;
+        gap: 0.7rem;
     }
     .ministracoes h2 {
         font-size: 2rem;
@@ -668,8 +668,8 @@ footer a:hover {
         height: 100%;
     }
     .ministracoes-links a {
-        width: 80vw;
-        height: 20vh;
+        width: 70vw;
+        height: 15vh;
     }
 
 
